@@ -1,7 +1,12 @@
-body {
+      body {
         margin: 0px;
         font-family: Lekton;
          background-color: #FFFbe6;
+      }
+      
+      h1 {
+      	color:#FFFbe6;
+        text-align: center;
       }
       
       button {
@@ -21,6 +26,7 @@ body {
         grid-row-start: 1;
         grid-row-end: 2;
         background-color: #356859;
+        box-shadow: 0px 2px 2px 0px #a5a3a382;
       }
 
       .footer {
@@ -40,11 +46,13 @@ body {
       .left {
         grid-column-start: 1;
         grid-column-end: 2;
+        box-shadow: 2px 0px 2px 0px #a5a3a382;
       }
 
       .right {
         grid-column-start: 3;
         grid-column-end: 4;
+        box-shadow: -2px 0px 2px 0px #a5a3a382;
       }
 
       .mainContent {
@@ -64,6 +72,6 @@ body {
           grid-column-end: 4;
           grid-row-start: 3;
           grid-row-end: 4;
-          background-color: yellow;
+          background-color: rgba(241,245, 223, 1);
         }
       }
