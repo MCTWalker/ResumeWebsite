@@ -1,4 +1,4 @@
-      body {
+     body {
         margin: 0px;
         font-family: Lekton;
         background-color: #FFFbe6;
@@ -62,7 +62,26 @@
         grid-row-start: 2;
         grid-row-end: 4;
         padding: 10px;
-        overflow-y: scroll;
+        overflow-y: auto;
+      }
+      
+      .card {
+      	margin-bottom: 20px;
+        background-color: rgba(241,245, 223, 1);
+        padding: 5px;
+        box-shadow: 2px 2px 2px 0px #a5a3a382;
+        border: 1px solid #a5a3a382;
+        border-radius: 5px;
+      }
+      
+      .card img {
+      	float: left;
+        margin-right: 10px;
+        border-radius: 5px;
+      }
+      
+      .card.img-card {
+      	min-height: 140px;
       }
       
       a {
@@ -85,10 +104,10 @@
           grid-column-end: 4;
           grid-row-start: 3;
           grid-row-end: 4;
-          background-color: rgba(241,245, 223, 1);
+          box-shadow: 0px -2px 2px 0px #a5a3a382;
         }
         
         .right {
         	display: none;
-        }
+        }      
       }
