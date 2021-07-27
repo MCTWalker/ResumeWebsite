@@ -1,7 +1,7 @@
       body {
         margin: 0px;
         font-family: Lekton;
-         background-color: #FFFbe6;
+        background-color: #FFFbe6;
       }
       
       h1 {
@@ -16,13 +16,13 @@
       .gridContainer {
         display: grid;
         grid-template-columns: 1fr 4fr 1fr;
-        grid-template-rows: 1fr 6fr 1fr 1fr;
-        height: 100vh;
+        grid-template-rows: 1fr 6fr 1fr 10vh;
+        height: 110vh;
       }
 
-      .header {
+      .first-section {
         grid-column-start: 1;
-        grid-column-end: 6;
+        grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 2;
         background-color: #356859;
@@ -41,6 +41,7 @@
         grid-row-start: 2;
         grid-row-end: 4;
         background-color: #b9e4c9;
+        padding: 5px;
       }
 
       .left {
@@ -59,12 +60,24 @@
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;
-        grid-row-end: 3;
+        grid-row-end: 4;
+        padding: 10px;
+        overflow-y: scroll;
+      }
+      
+      a {
+      	display: block;
       }
       
       @media only screen and (max-width: 600px) {
         body {
           background-color: #FFFbe6;
+        }
+        
+        .mainContent {
+           grid-row-end: 3;
+           grid-column-start: 1;
+           grid-column-end: 4;
         }
         
         .sidenav {
@@ -73,5 +86,9 @@
           grid-row-start: 3;
           grid-row-end: 4;
           background-color: rgba(241,245, 223, 1);
+        }
+        
+        .right {
+        	display: none;
         }
       }
