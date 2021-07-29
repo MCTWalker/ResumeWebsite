@@ -1,12 +1,21 @@
-     body {
+    body {
         margin: 0px;
         font-family: Lekton;
         background-color: #FFFbe6;
       }
       
-      h1 {
+      h1, h3 {
       	color:#FFFbe6;
         text-align: center;
+      }
+      
+      h1 {
+      	font-size: 1.5em;
+    	margin-bottom: 10px;
+      }
+      
+      h3 {
+      	font-size: .8em;
       }
       
       button {
@@ -35,6 +44,7 @@
         grid-row-start: 4;
         grid-row-end: 5;
         background-color: rgba(241,245, 223, 1);
+        box-shadow: -2px 0px 2px 0px #a5a3a382;
       }
 
       .sidenav {
@@ -72,12 +82,17 @@
         box-shadow: 2px 2px 2px 0px #a5a3a382;
         border: 1px solid #a5a3a382;
         border-radius: 5px;
+        position: relative;
+        z-index: -1;
       }
       
       .card img {
       	float: left;
         margin-right: 10px;
         border-radius: 5px;
+        width: 40%;
+        max-height: 133px;
+        max-width: 200px;
       }
       
       .card.img-card {
